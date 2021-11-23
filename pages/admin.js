@@ -5,7 +5,7 @@ import Nav from '../components/Admin/Nav'
 import Footer from '../components/_Common/Footer'
 import Content from '../components/_Common/Content'
 
-export default function Home() {
+export default function Admin() {
   const [user, setUser] = useState(null)
 
   // fetch data
@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <HeadTag title="Ingram Auctioneer" />
+      <HeadTag title="Ingram Auctioneer | Admin" />
       <Nav user={user} />
       <main className={styles.main}>
         <Content user={user} />
