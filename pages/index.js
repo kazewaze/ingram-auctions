@@ -15,9 +15,6 @@ export default function Home() {
       .then(data => setUser(data))
   }, [])
 
-  // global loading state
-  if (!user) return <div>ERROR... NO USER!</div>
-
   return (
     <div className={styles.container}>
       <HeadTag title="Ingram Auctioneer" />
