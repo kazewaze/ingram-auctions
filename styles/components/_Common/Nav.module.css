@@ -1,0 +1,27 @@
+.Nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 7px 17px 7px 17px;
+  background-color: #3d2102;
+}
+
+.Nav__User {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nav__User > p {
+  margin: 0 30px 0 5px;
+  color: #f9f0e0;
+}
+
+.Nav__LogoutBtn {
+  padding: 7px;
+  border: none;
+  border-radius: 2.25px;
+  font-weight: 600;
+  color: #3d2102;
+  background-color: #d8a470;
+}

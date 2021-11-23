@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
-import HeadTag from '../components/_Common/HeadTag'
-import styles from '../styles/pages/Home.module.css'
+
+import styles from '../styles/pages/Admin.module.css'
 import Nav from '../components/Admin/Nav'
-import Footer from '../components/_Common/Footer'
+import Denied from '../components/Admin/Denied'
+import HeadTag from '../components/_Common/HeadTag'
 import Content from '../components/_Common/Content'
+import Footer from '../components/_Common/Footer'
 
 export default function Admin() {
   const [user, setUser] = useState(null)
@@ -16,7 +18,7 @@ export default function Admin() {
   }, [])
 
   // global loading state
-  if (!user) return <div>ERROR... NO USER!</div>
+  if (!user) return <Denied />
 
   return (
     <div className={styles.container}>

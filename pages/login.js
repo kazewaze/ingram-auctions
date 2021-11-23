@@ -1,5 +1,5 @@
 import HeadTag from '../components/_Common/HeadTag'
-import styles from '../styles/pages/Home.module.css'
+import styles from '../styles/pages/Login.module.css'
 import Footer from '../components/_Common/Footer'
 
 export default function Login() {

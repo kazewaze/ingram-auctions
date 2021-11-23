@@ -1,31 +1,19 @@
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
 import HeadTag from '../components/_Common/HeadTag'
 import styles from '../styles/pages/Home.module.css'
-import Nav from '../components/Admin/Nav'
+import Nav from '../components/_Common/Nav'
 import Footer from '../components/_Common/Footer'
-import Content from '../components/_Common/Content'
+// import Content from '../components/_Common/Content'
 
 export default function Home() {
-  const [user, setUser] = useState(null)
-
-  // fetch data
-  useEffect(() => {
-    fetch('/api/user')
-      .then(res => res.json())
-      .then(data => setUser(data))
-  }, [])
-
-  // global loading state
-  if (!user) return <div>ERROR... NO USER!</div>
-
   return (
     <div className={styles.container}>
       <HeadTag title="Ingram Auctioneer" />
-      <Nav user={user} />
+      <Nav />
       <main className={styles.main}>
-        <Content user={user} />
+        <h1>Welcome</h1>
       </main>
-      <Footer user={user} />
+      <Footer user={''} />
     </div>
   )
 }
