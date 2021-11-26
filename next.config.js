@@ -36,6 +36,15 @@ module.exports = {
       },
     ]
   },
+  async redirects() {
+    return [
+      {
+        source: '/admin',
+        destination: '/login',
+        permanent: true,
+      },
+    ]
+  },
   images: {
     domains: ['raw.githubusercontent.com'],
   },

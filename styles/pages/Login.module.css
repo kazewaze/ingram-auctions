@@ -22,6 +22,12 @@
   margin-right: 12px;
 }
 
+.errMessage {
+  text-align: center;
+  font-weight: 900;
+  color: #ee2e24;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

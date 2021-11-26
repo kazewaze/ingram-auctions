@@ -1,27 +1,49 @@
 .Nav {
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 175px;
   padding: 7px 17px 7px 17px;
-  background-color: #3d2102;
+  background-color: #3D2102;
 }
 
-.Nav__User {
+.Nav__Left, .Nav__Right {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.Nav__User > p {
+.Nav__Left {
+
+}
+
+.Nav__Right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Nav__Right__User {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Nav__Right__User > p {
   margin: 0 30px 0 5px;
   color: #f9f0e0;
 }
 
-.Nav__LogoutBtn {
+.Nav__Right__LogoutBtn {
   padding: 7px;
   border: none;
   border-radius: 2.25px;
   font-weight: 600;
   color: #3d2102;
   background-color: #d8a470;
+}
+
+.Logo {
+  border: none;
+  border-radius: 2.25px;
+  background-color: #ffffff;
 }

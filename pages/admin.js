@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 import styles from '../styles/pages/Admin.module.css'
 import Nav from '../components/Admin/Nav'
@@ -9,8 +10,9 @@ import Footer from '../components/_Common/Footer'
 
 export default function Admin() {
   const [user, setUser] = useState(null)
+//  const router = useRouter()
 
-  // fetch data
+  // fetch user data
   useEffect(() => {
     fetch('/api/user')
       .then(res => res.json())
@@ -23,11 +25,11 @@ export default function Admin() {
   return (
     <div className={styles.container}>
       <HeadTag title="Ingram Auctioneer | Admin" />
-      <Nav user={user} />
       <main className={styles.main}>
+        <Nav user={user} />
         <Content user={user} />
+        <Footer user={user} />
       </main>
-      <Footer user={user} />
     </div>
   )
 }

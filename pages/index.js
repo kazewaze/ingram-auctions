@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <HeadTag title="Ingram Auctioneer" />
-      <Nav />
       <main className={styles.main}>
+        <Nav />
         <h1>Welcome</h1>
+        <Footer user={''} />
       </main>
-      <Footer user={''} />
     </div>
   )
 }
