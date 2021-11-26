@@ -1,6 +1,6 @@
 async function Fetcha(url, method, data) {
   // Switch to process.env.API_BASE_ROUTE in production.
-  url = 'http://localhost:3000/api' + url
+  url = process.env.API_BASE_ROUTE + url
 
   const res = await fetch(
     url,

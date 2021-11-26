@@ -6,7 +6,7 @@
 */
 
 export default function handler(req, res) {
-  if (req.headers.referer === 'http://localhost:3000/admin') {
+  if (req.headers.referer === process.env.LOGIN_REFER_PROD) {
     if (req.method === 'GET') {
       // res.status(200).json({})
     } else if (req.method === 'POST') {
